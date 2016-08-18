@@ -3,41 +3,32 @@
 <head>
 	<link rel="stylesheet" href="style.css">
 	<script src="script.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
 
 <body>
 	<div id="container">
-		<div>
-			<div>
-				<div id="center">
-					<div id="top-left" onclick="test()">
-						<div class="shape" > </div>
-					</div>
-					<div id="top-right">
-						<div class="shape"> </div>
-					</div>
-					<div id="bottom-left">
-						<div class="shape"> </div>
-					</div>
-					<div id="bottom-right">
-						<div class="shape"> </div>
-					</div>
-					<div id="menu">
-						<div>
-							<div>
-								<div >
-									<div id="wrapper">
-										<h1 style="text-align: center; width: 100px; margin-left: auto; margin-right: auto;">Simon</h1>
-										<div id="display"></div>
-										<div id="start"></div>
-										<div id="strict"></div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+	
+		<div id="center">
+			<div id="top-left" onclick="test()"></div>
+			<div id="top-right"></div>
+			<div id="bottom-left"></div>
+			<div id="bottom-right"></div>
+		</div>
+		
+		<div id="menu">
+		<div id="wrap" >
+			<div id="simon-header">Simon<sup style="font-size: 20px">&reg;</sup></div>
+			<div id="contentWrap">
+				<div id="counter"><div></div><p>COUNT</p></div>
+				<div id="start"><div></div> <p>START</p></div>
+				<div id="strict-wrap">
+					<div id="light"></div>
+					<div id="strict"></div>
+					<p>STRICT</p>
 			</div>
+			</div>
+		</div>
 		</div>
 	</div>
 </html>
