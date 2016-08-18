@@ -1,3 +1,3 @@
-function test(){
-  console.log("test");
+function test(colour){
+  console.log("adhi likes " + colour);
 }
