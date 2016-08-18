@@ -171,6 +171,7 @@
 }
 
 #strict-wrap{
+	margin-top: 1px;
 	float:left;
 	margin-left: 50px;
 	width:50px;
@@ -197,6 +198,7 @@
 }
 #strict-wrap>p{
 	position: absolute;
+	margin-top: 1px;
 	bottom: 0;
 	text-align: center;
 	left: 50%;
