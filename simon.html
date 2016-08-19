@@ -10,19 +10,19 @@
 <body ng-app="app" ng-controller="main">
 
 	<div id="container">
-		<div id="center">
-			<div id="top-left" onclick="test('green')"></div>
-			<div id="top-right" onclick="test('red')"></div>
-			<div id="bottom-left" onclick="test('orange')"></div>
-			<div id="bottom-right" onclick="test('blue')"></div>
+		<div id="center" class="spin">
+			<div id="top-left" ng-style="green" ng-click="player('green')" ng-disabled="isDisabled"></div>
+			<div id="top-right" ng-style = "red" ng-click="player('red')" ng-disabled="isDisabled"></div>
+			<div id="bottom-left" ng-style = "yellow" ng-click="player('yellow')" ng-disabled="isDisabled"></div>
+			<div id="bottom-right" ng-style = "blue" ng-click="player('blue')" ng-disabled="isDisabled"></div>
 		</div>
 		
 		<div id="menu">
 		<div id="wrap" >
 			<div id="simon-header">Simon<sup style="font-size: 20px">&reg;</sup></div>
 			<div id="contentWrap" class="row">
-				<div id="counter"><div>--</div><p>COUNT</p></div>
-				<div id="start"><div></div> <p>START</p></div>
+				<div id="counter"><div>{{score}}</div><p>COUNT</p></div>
+				<div id="start" ng-click="start()"><div></div> <p>START</p></div>
 				<div id="strict-wrap">
 					<div id="light"></div>
 					<div id="strict"></div>
