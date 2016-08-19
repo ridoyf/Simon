@@ -1,16 +1,21 @@
 <html>
 <head>
 	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://daneden.github.io/animate.css/animate.min.css">
 	<script src="script.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js"></script>
     <!--angular -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
     <script src="app.js"></script>
+    <script>
+		new WOW().init();
+	</script>
 </head>
 <body ng-app="app" ng-controller="main">
 
-	<div id="container">
-		<div id="center" class="spin">
+	<div id="container" class="wowBack clearfix">
+		<div id="center" class="wowWrap">
 			<div id="top-left" ng-style="green" ng-click="player('green')" ng-disabled="isDisabled"></div>
 			<div id="top-right" ng-style = "red" ng-click="player('red')" ng-disabled="isDisabled"></div>
 			<div id="bottom-left" ng-style = "yellow" ng-click="player('yellow')" ng-disabled="isDisabled"></div>
