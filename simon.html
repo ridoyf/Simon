@@ -14,12 +14,12 @@
 </head>
 <body ng-app="app" ng-controller="main">
 
-	<div id="container" class="wowBack clearfix">
+	<div id="container" class="wow fadeIn">
 		<div id="center" class="wowWrap">
-			<div id="top-left" ng-style="green" ng-click="player('green')" ng-disabled="isDisabled"></div>
-			<div id="top-right" ng-style = "red" ng-click="player('red')" ng-disabled="isDisabled"></div>
-			<div id="bottom-left" ng-style = "yellow" ng-click="player('yellow')" ng-disabled="isDisabled"></div>
-			<div id="bottom-right" ng-style = "blue" ng-click="player('blue')" ng-disabled="isDisabled"></div>
+			<div id="top-left" ng-style="green" ng-mouseDown="playAudio('green')" ng-disabled="true"></div>
+			<div id="top-right" ng-style = "red" ng-mouseDown="playAudio('red')" ng-disabled="master"></div>
+			<div id="bottom-left" ng-style = "yellow" ng-mouseDown="playAudio('blue')" ng-disabled="master"></div>
+			<div id="bottom-right" ng-style = "blue" ng-mouseDown="playAudio('yellow')" ng-disabled="master"></div>
 		</div>
 		
 		<div id="menu">
@@ -38,11 +38,12 @@
             <div class="row switch-container">
                 <p>OFF</p>
                 <label class="switch">
-                  <input type="checkbox">
+                  <input id="switch" type="checkbox" ng-model="master">
                   <div class="slider round"></div>
                 </label>
                 <p>ON</p>
             </div>
 		</div>
 	</div>
+</body>
 </html>
